@@ -172,9 +172,17 @@ h1{
   margin-top: 8px;
   font-size: 17px;
   width: 238px;
-  /*border: none;*/
 }
 
+.navbar-collapse {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+    width: 100%;
+}
 
 .navbar-nav .search-container button {
   float: right;
@@ -194,14 +202,21 @@ h1{
 @media screen and (max-width: 600px) {
   .navbar-nav .search-container {
     float: none;
+    overflow: hidden;
   }
-  .navbar-nav a, .navbar-nav input[type=text], .navbar-nav .search-container button {
-    float: none;
-    display: block;
+  .navbar-nav input[type=text], .navbar-nav .search-container button {
+    float: left;
     text-align: left;
-    width: 100%;
+    width: 82%;
     margin: 0;
     padding: 14px;
+  }
+
+  .navbar-nav .search-container button {
+    width: 52px;
+    height: 54px;
+    padding: 18px;
+    margin: 0;
   }
   .navbar-nav input[type=text] {
     border: 1px solid #ccc;
